@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomWear - Tienda de Remeras Personalizadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado / Navegación -->
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">Custom<span>Wear</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#personalizar">Diseña la Tuya</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                🛒 <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Héroe / Presentación -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h2>Tu estilo, tu propio diseño</h2>
+            <p>Creamos remeras estampadas con la mejor calidad de algodón y tintas de alta durabilidad. ¡Subí tu imagen o elegí tu frase!</p>
+            <a href="#personalizar" class="btn">Empezar a Diseñar</a>
+        </div>
+    </section>
+
+    <!-- Sección de Productos Destacados -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h3 class="section-title">Modelos Base Destacados</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img-placeholder">Remera Oversize</div>
+                    <h4>Remera Oversize Urbana</h4>
+                    <p class="price">$15.000</p>
+                    <button class="btn-card">Ver Opciones</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-placeholder">Remera Classic</div>
+                    <h4>Remera Algodón Premium</h4>
+                    <p class="price">$12.500</p>
+                    <button class="btn-card">Ver Opciones</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-placeholder">Remera Deportiva</div>
+                    <h4>Remera Dry-Fit Deportiva</h4>
+                    <p class="price">$14.000</p>
+                    <button class="btn-card">Ver Opciones</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Personalización (Simulada) -->
+    <section id="personalizar" class="custom-section">
+        <div class="container custom-container">
+            <div class="custom-preview">
+                <div class="shirt-mockup">
+                    <div class="design-area">Tu Diseño Aquí</div>
+                </div>
+            </div>
+            <div class="custom-controls">
+                <h3>Personalizá tu Remera</h3>
+                <form class="custom-form" onsubmit="event.preventDefault();">
+                    <label for="color">Color de la prenda:</label>
+                    <select id="color">
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="gris">Gris Melange</option>
+                    </select>
+
+                    <label for="talle">Talle:</label>
+                    <select id="talle">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+
+                    <label for="file">Subir Logo o Imagen (.png, .jpg):</label>
+                    <input type="file" id="file" accept="image/*">
+
+                    <label for="texto">O agregá un texto:</label>
+                    <input type="text" id="texto" placeholder="Escribí tu frase favorita">
+
+                    <button class="btn btn-submit">Agregar al Carrito</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 CustomWear. Todos los derechos reservados.</p>
+            <p>Creado para repositorio de GitHub.</p>
+        </div>
+    </footer>
+</body>
+</html>
